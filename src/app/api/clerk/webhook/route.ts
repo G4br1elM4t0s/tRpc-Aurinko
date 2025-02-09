@@ -20,6 +20,7 @@ export const POST = async (req: Request) => {
     }
   })
 
+  console.log("Clerk created successfully")
   return new Response("webhook received",{
     status: 200
   })
