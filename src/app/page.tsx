@@ -1,5 +1,9 @@
-import { Button } from "@/components/ui/button";
+import LinkAccountButton from "@/components/link-account-button"
 
 export default async function Home() {
-  return <Button>Login</Button>
+  return (
+    <div className="flex gap-2 items-center">
+      <LinkAccountButton />
+    </div>
+  )
 }
