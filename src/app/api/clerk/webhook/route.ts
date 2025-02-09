@@ -9,7 +9,7 @@ export const POST = async (req: Request) => {
   const clerkUser = {
     emailAddress: data.email_addresses[0].email_address,
     firstName: data.first_name,
-    lastName: data.last_name,
+    lastName: data.last_name || "",
     imageUrl: data.image_url,
     id: data.id
   }
